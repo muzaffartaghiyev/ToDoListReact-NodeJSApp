@@ -8,8 +8,8 @@ const Button = ({show,setShow}) => {
   }
 
   return (
-    <button className={`btn btn-lg ${show?'btn-danger':'btn-primary'} mb-5`} onClick={handleClick}>
-              {show?'Close Add Task Bar':'Show Add Task Bar'}
+    <button className={`btn btn-lg ${show?'btn-danger':'btn-primary'} my-5`} onClick={handleClick}>
+              {show?'Close - Add Task Bar':'Show - Add Task Bar'}
     </button>
   )
 }

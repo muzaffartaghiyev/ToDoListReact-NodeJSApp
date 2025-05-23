@@ -28,18 +28,15 @@ const Home = () => {
 
 
   return (
-    <div className='container bg-warning rounded-2 py-2 my-5 d-flex justify-content-around' >
-      
-      <div className='row w-100' >
-          <Header addTask={addTask}/>
-        
-          {tasks.length!==0 
-          ? 
-          (<TasksList tasks={tasks} deleteTask={deleteTask} makeCompleted={makeCompleted} editTask={editTask}/>)
-          :
-          (<h4 className='col-12 text-center my-auto p-5 text-danger'>No Tasks To Show</h4>) }
-      </div>
-      
+    <div className='container mt-5' >
+        <Header addTask={addTask}/>
+
+        {tasks.length!==0 
+        ? 
+        (<TasksList tasks={tasks} deleteTask={deleteTask} makeCompleted={makeCompleted} editTask={editTask}/>)
+        :
+        (<h4 className='text-center my-auto p-5 text-danger'>No Tasks To Show</h4>) }
+
     </div>
   )
 }

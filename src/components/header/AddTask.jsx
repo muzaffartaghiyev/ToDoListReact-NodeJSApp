@@ -26,7 +26,7 @@ const AddTask = ({addTask}) => {
   }
 
   return (
-    <form className='container bg-primary-subtle my-3 text-start p-3 rounded-3' onSubmit={handleSubmit}>
+    <form className='bg-primary-subtle my-3 text-start p-3 rounded-3' onSubmit={handleSubmit}>
             <div className="mb-3">
               <label for="exampleInputText1" className="form-label h5">Task</label>
               <input type="text" className="form-control" id="exampleInputText1" aria-describedby="textHelp"
