@@ -32,7 +32,7 @@ const AddTask = ({addTask}) => {
               <label for="exampleInputText1" className="form-label h5">Task</label>
               <input type="text" className="form-control" id="exampleInputText1" aria-describedby="textHelp"
               onChange={(e)=>setTask(e.target.value)}
-              value={task} required placeholder='Enter your Task'
+              value={task} required placeholder='Enter Your Task'
               />
               
             </div>
