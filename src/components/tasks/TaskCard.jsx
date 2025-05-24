@@ -41,8 +41,9 @@ const TaskCard = ({task,deleteTask,makeCompleted,editTask}) => {
               </div>     
           </div>
           <div className='d-flex align-items-center justify-content-center' style={{cursor:'pointer'}}>
-            <MdEdit className='h3 text-secondary pe-auto me-2' data-bs-toggle="modal"
-          data-bs-target={`#taskModal-${task.id}`}/>
+            {!task.completed && (<MdEdit className='h3 text-secondary pe-auto me-2' data-bs-toggle="modal"
+          data-bs-target={`#taskModal-${task.id}`}/>)}
+            
             <TiDeleteOutline className='h2 text-danger' onClick={handleDeleteTask}/>
           </div>
           <EditModal task={task} modalId={`taskModal-${task.id}`} editTask={editTask} />
