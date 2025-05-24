@@ -18,7 +18,8 @@ const AddTask = ({addTask}) => {
       id:uuidv4(),
       task:task,
       date:date,
-      completed:false
+      completed:false,
+      completedAt:''
     })
     toast.success("Task Added Successfully")
     setTask('')

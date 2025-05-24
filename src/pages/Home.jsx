@@ -6,8 +6,8 @@ import TasksList from "../components/tasks/TasksList"
 const Home = () => {
 
     const [tasks,setTasks] = useState([
-    {id:"fsfsds",task:"fsdfd",date:"2025-05-04T20:35",completed:false},
-    {id:"fsfssdsds",task:"fsrewrwerdfd",date:"2025-05-04T20:35",completed:true}
+    {id:"fsfsds",task:"fsdfd",date:"2025-05-04T20:35",completed:false,completedAt:''},
+    {id:"fsfssdsds",task:"fsrewrwerdfd",date:"2025-05-04T20:35",completed:false,completedAt:''}
   ])
 
     const addTask=(newTask)=>{
@@ -19,7 +19,7 @@ const Home = () => {
     }
 
     const makeCompleted = (id) => {
-        setTasks(tasks.map(task=>task.id===id ? {...task,completed:!task.completed}:task))
+        setTasks(tasks.map(task=>task.id===id ? {...task,completed:!task.completed,completedAt:new Date().toString()}:task))
     }
 
     const deleteTask = (id) =>{
