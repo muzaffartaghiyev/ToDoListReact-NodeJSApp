@@ -9,9 +9,17 @@ const EditModal = ({task,modalId,editTask}) => {
 
     const handleEditTask= (e) =>{  
       e.preventDefault()
+
+      if(editedTask.trim()===""){
+        toast.error("Please fill out the Task Field!")
+        return
+      }
+
       editTask(task.id,editedTask,editedDate)
       
       toast.warning(`Task Edited`)
+      setEditedTask('')
+      setEditedDate('')
   }
 
   return (
