@@ -33,6 +33,9 @@ app.use(cors(corsOptions));
 
 /*---------------------------------------------*/
 // ! Routes
+app.all('/', (req, res) => res.send({ message: 'Welcome to TODO API' }))
+
+
 app.use("/todos",require("./src/routers/todo.js"))
 
 /*---------------------------------------------*/
