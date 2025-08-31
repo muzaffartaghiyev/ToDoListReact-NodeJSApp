@@ -13,7 +13,7 @@ const Home = () => {
       try {
           const res = await axios(import.meta.env.VITE_APP_URL)
           
-          setTasks(res.data.result)
+          setTasks(res.data.result.reverse())
         } catch (error) {
           console.log(error)
         }
