@@ -129,4 +129,3 @@ The **To-Do List Application** is a React-based application that allows users to
 ## Acknowledgments
 * **React Toastify:** For providing user-friendly toast notifications.
 * **Bootstrap:** For responsive and easy-to-use styling.
-* **UUID:** For generating unique IDs for tasks.
